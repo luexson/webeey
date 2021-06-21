@@ -16,7 +16,7 @@ $client = new Client($sid, $token);
 
 /* TWILIO SMS END*/
 
-$message = $twilio->messages 
+$message = $client->messages 
                   ->create("+19092946035", // to 
                            array(  
                                "messagingServiceSid" => "MG421c1574a624467f4e6b2165f45da2d2",      
@@ -82,3 +82,5 @@ echo json_encode($data);
 
 
 */
+
+
